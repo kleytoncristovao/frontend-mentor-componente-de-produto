@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+}
+
+.conteudo__principal {
+  display: flex;
+  height: 50%;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.perfume {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
