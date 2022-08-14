@@ -4,23 +4,25 @@
 font-family: 'Fraunces', serif;
 font-family: 'Montserrat', sans-serif; */
 
-body {
+body, h1, p, h2, h2, div, header {
   margin: 0;
-  background-color: hsl(30, 38%, 92%);
+  padding: 0;
   font-size: 14px;
 }
 
 .conteudo {
   display: flex;
   justify-content: center;
+  background-color: hsl(30, 38%, 92%);
   padding: 10rem;
+  height: 60vh;
 }
 
 .conteudo__principal {
   display: flex;
-  height: 450px;
+  height: 500px;
   border-radius: 10px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);  
   padding: 0;
 }
 
@@ -29,13 +31,12 @@ body {
   flex-direction: column;
   align-content: center;
   padding: 0 2rem 0 2rem;
-  max-height: 100%;
 }
 
 .texto__perfume {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-weight: 500;
   letter-spacing: 5px;
   color: hsl(228, 12%, 48%);
@@ -46,6 +47,8 @@ body {
   flex-direction: column;
   font-family: 'Fraunces', serif;
   font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  padding: 1.5rem 0;
   justify-content: flex-start;
   font-size: 2.7rem;
 }
@@ -55,20 +58,35 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   color: hsl(228, 12%, 48%);
 }
 
 .texto__preco {
   display: flex;
+  padding: 1rem 0;
+}
+
+.texto__preco--1 {
+  color: ;
+}
+
+.texto__preco--2 {
+
+}
+
+.texto__carrinho {
+  display: flex;
 }
 
 .perfume {
-  width: 300px;
+  width: 400px;
   border-radius: 10px 0 0 10px;
 }
 
 .attribution {
   display: flex;
   justify-content: center;
+  height: 6vh;
+  background-color: hsl(30, 38%, 92%);
 }
