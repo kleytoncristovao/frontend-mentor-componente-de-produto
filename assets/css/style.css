@@ -45,10 +45,10 @@ body, h1, p, h2, h2, div, header {
 .texto__título {
   display: flex;
   flex-direction: column;
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: hsl(212, 21%, 14%);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   justify-content: flex-start;
   font-size: 2.7rem;
 }
@@ -68,15 +68,37 @@ body, h1, p, h2, h2, div, header {
 }
 
 .texto__preco--1 {
-  color: ;
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .texto__preco--2 {
-
+  color: hsl(228, 12%, 48%);
+  margin-left: 1.5rem;
+  text-decoration: line-through;
 }
 
 .texto__carrinho {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.texto__carrinho--botao {
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  margin-left: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: transparent;
 }
 
 .perfume {
@@ -89,4 +111,12 @@ body, h1, p, h2, h2, div, header {
   justify-content: center;
   height: 6vh;
   background-color: hsl(30, 38%, 92%);
+}
+
+@media screen and (min-width: 375px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+  
 }
