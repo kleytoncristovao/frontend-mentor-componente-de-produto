@@ -20,7 +20,7 @@ body, h1, p, h2, h2, div, header {
 
 .conteudo__principal {
   display: flex;
-  height: 500px;
+  height: 90%;
   border-radius: 10px;
   background-color: hsl(0, 0%, 100%);  
   padding: 0;
@@ -114,7 +114,14 @@ body, h1, p, h2, h2, div, header {
 }
 
 @media screen and (min-width: 375px) {
-
+  .conteudo {
+    padding: 2rem;
+  }
+  .conteudo__principal {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
