@@ -10,11 +10,10 @@ body, h1, p, h2, h2, div, header {
   font-size: 14px;
 }
 
-
-
-
-
-
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .texto__paragrafo {
   display: flex;
@@ -24,9 +23,6 @@ body, h1, p, h2, h2, div, header {
   line-height: 1.5rem;
   color: hsl(228, 12%, 48%);
 }
-
-
-
 
 .texto__carrinho {
   display: flex;
@@ -49,11 +45,12 @@ body, h1, p, h2, h2, div, header {
   background-color: transparent;
 }
 
+.texto__carrinho:hover {
+  cursor: pointer;
+  background-color:  hsl(157, 73%, 19%);
+}
 
-
-
-
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 310px) {
   .conteudo {
     display: flex;
     flex-direction: column;
@@ -130,7 +127,7 @@ body, h1, p, h2, h2, div, header {
 
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1080px) {
   .conteudo {
     flex-direction: row;
     justify-content: center;
@@ -140,12 +137,65 @@ body, h1, p, h2, h2, div, header {
   
   .conteudo__principal {
     display: flex;
+    justify-content: center;
     background-color: hsl(0, 0%, 100%);
     width: 550px;
     height: 600px;
     border-radius: 0 10px 10px 0;
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem 0;
+  }
+  
+  .texto__perfume {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+  }
+
+.texto__título {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  padding: 2rem 0;
+  justify-content: flex-start;
+  font-size: 2.7rem;
+}
+
+.texto__paragrafo {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.texto__preco {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.texto__preco--1 {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.texto__preco--2 {
+  color: hsl(228, 12%, 48%);
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
   .perfume {
     background: url("../../images/image-product-desktop.jpg") center / cover no-repeat ;
     width: 650px;
