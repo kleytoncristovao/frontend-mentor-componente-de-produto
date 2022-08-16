@@ -115,13 +115,20 @@ body, h1, p, h2, h2, div, header {
 
 @media screen and (min-width: 375px) {
   .conteudo {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
   }
   .conteudo__principal {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+  .perfume {
+    display: flex;
+    background: url("../../images/image-product-mobile.jpg") center / cover no-repeat ;
   }
+
 }
 
 @media screen and (min-width: 1440px) {
