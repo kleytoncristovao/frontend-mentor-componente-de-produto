@@ -15,40 +15,6 @@ a {
   color: black;
 }
 
-.texto__paragrafo {
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-  line-height: 1.5rem;
-  color: hsl(228, 12%, 48%);
-}
-
-.texto__carrinho {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: hsl(158, 36%, 37%);
-  padding: 1rem 0;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.texto__carrinho--botao {
-  border-style: none;
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  margin-left: 2%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  background-color: transparent;
-}
-
-.texto__carrinho:hover {
-  cursor: pointer;
-  background-color:  hsl(157, 73%, 19%);
-}
 
 @media screen and (min-width: 310px) {
   .conteudo {

@@ -1,0 +1,10 @@
+.texto__carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 100%;
+  }
