@@ -1,15 +1,13 @@
-
 .texto__carrinho--botao {
+    background-color: transparent;
     border-style: none;
     color: hsl(0, 0%, 100%);
-    font-size: 1rem;
-    margin-left: 2%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     font-weight: 700;
-    background-color: transparent;
+    margin-left: 2%;
   }
-  
   .texto__carrinho:hover {
-    cursor: pointer;
     background-color:  hsl(157, 73%, 19%);
+    cursor: pointer;
   }

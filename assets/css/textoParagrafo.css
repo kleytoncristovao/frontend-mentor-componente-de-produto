@@ -1,9 +1,9 @@
 .texto__paragrafo {
+    color: hsl(228, 12%, 48%);
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5rem;
-    color: hsl(228, 12%, 48%);
   }
   

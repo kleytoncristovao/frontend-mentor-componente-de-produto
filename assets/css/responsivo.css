@@ -4,176 +4,227 @@
 font-family: 'Fraunces', serif;
 font-family: 'Montserrat', sans-serif; */
 
-body, h1, p, h2, h2, div, header {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+}
+
+body, h1, p, h2, h2, div, header {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 310px) {
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .conteudo__principal {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    padding: 1rem;
+  }
+  .texto {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .texto__perfume {
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: .5rem;
+    letter-spacing: 2px;
+  }
+  .texto__título {
+    color: hsl(212, 21%, 14%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    justify-content: flex-start;
+  }
+  .texto__preco {
+    display: flex;
+    padding: 1rem 0;
+  }
+  .texto__preco--1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .texto__preco--2 {
+    color: hsl(228, 12%, 48%);
+    font-size: .7rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
+  }
+  .perfume {
+    background: url("../../images/image-product-mobile.jpg") center / cover no-repeat ;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    height: 300px;
+  }
+  .attribution {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
 }
 
 
 @media screen and (min-width: 310px) {
   .conteudo {
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(30, 38%, 92%);
     padding: 2rem 1rem;
-    height: 90vh;
   }
   .conteudo__principal {
-    display: flex;
-    border-radius: 0 0 10px 10px;
     background-color: hsl(0, 0%, 100%);
-    height: auto; 
-    padding: 1rem;
-    flex-direction: column;
-}
-
-  .texto {
+    border-radius: 0 0 10px 10px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    padding: 1rem;
+  }
+  .texto {
     padding: 0 1rem 0 1rem;
   }
-  
+  .texto__título {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
   .texto__perfume {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 1rem;
-    font-weight: 500;
-    letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
-  }
-
-.texto__título {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: hsl(212, 21%, 14%);
-  padding: 1rem 0;
-  justify-content: flex-start;
-  font-size: 2.3rem;
-}
-
-.texto__preco {
-  display: flex;
-  padding: 1rem 0;
-}
-
-.texto__preco--1 {
-  color: hsl(158, 36%, 37%);
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.texto__preco--2 {
-  color: hsl(228, 12%, 48%);
-  margin-left: 1rem;
-  text-decoration: line-through;
-}
-  .perfume {
     display: flex;
-    background: url("../../images/image-product-mobile.jpg") center / cover no-repeat ;
-    height: 300px;
-    border-radius: 10px 10px 0 0;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: .5rem;
+    letter-spacing: 5px;
   }
-
+  .texto__título {
+    font-size: 2.3rem;
+  }
+  .texto__paragrafo {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .texto__preco {
+    display: flex;
+    padding: 1rem 0;
+  }
+  .texto__preco--1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .texto__preco--2 {
+    color: hsl(228, 12%, 48%);
+    margin-left: 1rem;
+    text-decoration: line-through;
+  }
+  .perfume {
+    background: url("../../images/image-product-mobile.jpg") center / cover no-repeat ;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    height: 300px;
+  }
   .attribution {
     display: flex;
     justify-content: center;
-    height: 3vh;
-    background-color: hsl(30, 38%, 92%);
   }
-
 }
 
 @media screen and (min-width: 1080px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
   .conteudo {
     flex-direction: row;
+    height: 60vh;
     justify-content: center;
     padding: 10rem;
-    height: 60vh;
   }
-  
   .conteudo__principal {
-    display: flex;
-    justify-content: center;
     background-color: hsl(0, 0%, 100%);
-    width: 550px;
-    height: 600px;
     border-radius: 0 10px 10px 0;
+    display: flex;
+    height: 600px;
+    justify-content: center;
     padding: 0 2rem;
+    width: 550px;
   }
-
   .texto {
+    align-content: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
     padding: 1rem 0;
   }
-  
   .texto__perfume {
+    color: hsl(228, 12%, 48%);
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 1rem;
     font-weight: 500;
+    padding-top: 1rem;
     letter-spacing: 5px;
-    color: hsl(228, 12%, 48%);
   }
-
-.texto__título {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: hsl(212, 21%, 14%);
-  padding: 2rem 0;
-  justify-content: flex-start;
-  font-size: 2.7rem;
-}
-
-.texto__paragrafo {
-  line-height: 1.5rem;
-  font-size: 1.1rem;
-}
-
-.texto__preco {
-  display: flex;
-  padding: 2rem 0;
-}
-
-.texto__preco--1 {
-  color: hsl(158, 36%, 37%);
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-size: 3.2rem;
-}
-
-.texto__preco--2 {
-  color: hsl(228, 12%, 48%);
-  margin-left: 1rem;
-  font-size: 1rem;
-  text-decoration: line-through;
-}
-
+  .texto__título {
+    color: hsl(212, 21%, 14%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    justify-content: flex-start;
+  }
+  .texto__paragrafo {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .texto__preco {
+    display: flex;
+    padding: 2rem 0;
+  }
+  .texto__preco--1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  .texto__preco--2 {
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
+  }
   .perfume {
     background: url("../../images/image-product-desktop.jpg") center / cover no-repeat ;
-    width: 650px;
-    height: 600px;
     border-radius: 10px 0 0 10px;
+    height: 600px;
+    width: 650px;
   }
-
   .attribution {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
     background-color: hsl(30, 38%, 92%);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
   }
-
 }
