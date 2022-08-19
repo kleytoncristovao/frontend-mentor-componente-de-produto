@@ -157,19 +157,21 @@ body, h1, p, h2, h2, div, header {
     justify-content: center;
   }
   .conteudo {
+    display: flex;
     flex-direction: row;
     height: 60vh;
     justify-content: center;
-    padding: 10rem;
+    align-items: center;
   }
   .conteudo__principal {
+    display: flex;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 10px 10px 0;
     display: flex;
     height: 600px;
     justify-content: center;
     padding: 0 2rem;
-    width: 550px;
+    max-width: 350px;
   }
   .texto {
     align-content: center;
@@ -219,7 +221,7 @@ body, h1, p, h2, h2, div, header {
     background: url("../../images/image-product-desktop.jpg") center / cover no-repeat ;
     border-radius: 10px 0 0 10px;
     height: 600px;
-    width: 650px;
+    width: 450px;
   }
   .attribution {
     background-color: hsl(30, 38%, 92%);
